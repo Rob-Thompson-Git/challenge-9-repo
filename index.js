@@ -28,24 +28,35 @@ function init() {
     },
     {
         type: 'input',
-        message: 'Provide instructions and examples for use. Include screenshots as needed?',
+        message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
         name: 'installation',
     },
     {
         type: 'input',
-        message: 'What did you learn?',
+        message: 'Provide instructions and examples for use. Include screenshots as needed.',
+        name: 'usage',
+    },
+    {
+        type: 'input',
+        message: 'List your collaborators.',
         name: 'credits',
     },
     {
         type: 'input',
-        message: 'What did you learn?',
+        message: 'If your product has a lot of features, list them',
         name: 'features',
     },
     {
         type: 'input',
-        message: 'What did you learn?',
-        name: 'features',
+        message: 'Go the extra mile and write tests for your application. Then provide examples on how to run them here.',
+        name: 'tests',
     },
+    {
+        type: 'input',
+        message: 'What is your GitHub username and your email address?',
+        name: 'questions',
+    },
+
 ]).then((answers) => {
     writeToFile('README.md', answers);
   })
