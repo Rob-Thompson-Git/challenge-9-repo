@@ -44,7 +44,7 @@ ${data.description}
 
 * [Usage](#usage)
 ${renderLicenseLink(data.license)}
-* [Contributing](#contributing)
+* [Contributors](#contributors)
 
 * [Tests](#tests)
 
@@ -77,9 +77,9 @@ THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRI
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   
-# Contributing
+# Contributors
 
-${data.contributing}
+${data.contributors}
 
 # Tests
 
@@ -93,7 +93,8 @@ ${data.test}
 
 If you have any questions about the repo, open an issue or contact me directly at ${
     data.email
-  }. You can find more of my work at [${data.github}](https://github.com/${
+  }.
+  You can find more of my work at [${data.github}](https://github.com/${
     data.github
   }/).
 

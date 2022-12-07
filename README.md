@@ -1,11 +1,11 @@
 
 
-# Prework Study Guide
+# README.md Generator
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 # Description
 
-Contains a simple, sample study guide containing and utilizing Git, HTML, CSS, and JS.
+This application is a CLI README.md file generator. It utilizes node.js and its npm package, inquirer(8.2.4). When users run the app in the CLI, they are asked a list of prompts from inquirer. After all prompts are finished, a README.md file is generated.
 
 # Table of Contents 
 
@@ -14,6 +14,8 @@ Contains a simple, sample study guide containing and utilizing Git, HTML, CSS, a
 * [Usage](#usage)
 
 * [License](#license)
+
+* [Contributors](#contributors)
 
 * [Questions](#questions)
 
@@ -27,10 +29,7 @@ npm i
 
 # Usage
 
-After installing packages, open CLI and run 
-```
-node index.js
-```
+Since this is a CLI-app, a short video demoing the README generator can be seen at the top of the README.
 
 # License
 
@@ -48,8 +47,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  
+# Contributors
+
+Robert Thompson
 
 # Questions
 
-If you have any questions about the repo, open an issue or contact me directly at rob.thomp15@gmail.com. You can find more of my work at [Rob-Thompson-Git](https://github.com/Rob-Thompson-Git/).
+If you have any questions about the repo, open an issue or contact me directly at rob.thomp15@gmail.com.<br>
+You can find more of my work at [Rob-Thompson-Git](https://github.com/Rob-Thompson-Git/).
 
