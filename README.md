@@ -7,6 +7,10 @@
 
 This application is a CLI README.md file generator. It utilizes node.js and its npm package, inquirer(8.2.4). When users run the app in the CLI, they are asked a list of prompts from inquirer. After all prompts are finished, a README.md file is generated.
 
+# Demo Video
+
+Uploading Screen Recording 2022-12-06 at 8.05.20 PM.mov
+
 # Table of Contents 
 
 * [Installation](#installation)
