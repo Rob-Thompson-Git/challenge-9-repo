@@ -1,67 +1,72 @@
-// TODO: Include packages needed for this application
-const inquirer = require('inquirer');
+// Imported required packages
 const fs = require('fs');
+const path = require('path');
+const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
-// TODO: Create an array of questions for user input
 
+// Array of questions for user input
+const questions = [
+  {
+    type: 'input',
+    name: 'github',
+    message: 'What is your GitHub username?',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address?',
+  },
+  {
+    type: 'input',
+    name: 'title',
+    message: "What is your project's name?",
+  },
+  {
+    type: 'input',
+    name: 'description',
+    message: 'Please write a short description of your project',
+  },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'What kind of license should your project have?',
+    choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+  },
+  {
+    type: 'input',
+    name: 'installation',
+    message: 'What command should be run to install dependencies?',
+    default: 'npm i',
+  },
+  {
+    type: 'input',
+    name: 'test',
+    message: 'What command should be run to run tests?',
+    default: 'npm test',
+  },
+  {
+    type: 'input',
+    name: 'usage',
+    message: 'What does the user need to know about using the repo?',
+  },
+  {
+    type: 'input',
+    name: 'contributing',
+    message: 'What does the user need to know about contributing to the repo?',
+  },
+];
 
-// TODO: Create a function to write README file
+// Function to write README file using the user input
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, generateMarkdown(data),(err) => {
-        err ? console.error(err) : console.log("Success!");
-    })
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
-    inquirer
-    .prompt([
-    {
-        type: 'input',
-        message: 'What is the project title name?',
-        name: 'title',
-    },
-    {
-        type: 'input',
-        message: 'Provide a short description explaining the what, why, and how of your project?',
-        name: 'description',
-    },
-    {
-        type: 'input',
-        message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
-        name: 'installation',
-    },
-    {
-        type: 'input',
-        message: 'Provide instructions and examples for use. Include screenshots as needed.',
-        name: 'usage',
-    },
-    {
-        type: 'input',
-        message: 'List your collaborators.',
-        name: 'credits',
-    },
-    {
-        type: 'input',
-        message: 'If your product has a lot of features, list them',
-        name: 'features',
-    },
-    {
-        type: 'input',
-        message: 'Go the extra mile and write tests for your application. Then provide examples on how to run them here.',
-        name: 'tests',
-    },
-    {
-        type: 'input',
-        message: 'What is your GitHub username and your email address?',
-        name: 'questions',
-    },
-
-]).then((answers) => {
-    writeToFile('README.md', answers);
-  })
-
+  inquirer.prompt(questions).then((inquirerResponses) => {
+    console.log('Generating README...');
+    writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
+  });
 }
 
-// Function call to initialize app
 init();

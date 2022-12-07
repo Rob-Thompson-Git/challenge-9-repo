@@ -1,41 +1,53 @@
-
-# Challenge 9
+# prework-study-guide
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
 
-Challenge 9 contents include an index.js files that includes the necessary packages, a function to write the README.md file, a function to initialize the application (with inquirer prompt), and a function to call initialization. It also includes a generateMarkdown.js file that includes functions to render necessary licences and badges, as well a function to generate markdown for README.md file with a template literal containing the corresponding README.md contents.
+Sample study guide containing and utilizing Git, HTML, CSS, JS
 
-## Table of Contents
+## Table of Contents 
+
 * [Installation](#installation)
+
 * [Usage](#usage)
-* [Credits](#credits)
+
 * [License](#license)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
 
 ## Installation
 
-First, fs and inquirer packages were linked to the index.js file. Then, 'npm install' was ran in the terminal to install the inquirer package.  
+To install necessary dependencies, run the following command:
+
+```
+npm i
+```
 
 ## Usage
 
-![alt text]
+clone, run npm i, and node index in CLI
 
-## Credits
+## License
 
-Rob Thompson
+This project is licensed under the MIT license.
+  
+## Contributing
 
-## Features
-
-README.md template generater functioning with inquirer and fs packages
-
-## Questions
-
-https://github.com/Rob-Thompson-Git rob.thomp15@gmail.com
+none
 
 ## Tests
 
-Test
+To run tests, run the following command:
 
+```
+npm test
+```
 
+## Questions
 
-
+If you have any questions about the repo, open an issue or contact me directly at rob.thomp15@gmail.com. You can find more of my work at [Rob-Thompson-Git](https://github.com/Rob-Thompson-Git/).
 
