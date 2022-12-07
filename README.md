@@ -9,7 +9,7 @@ This application is a CLI README.md file generator. It utilizes node.js and its 
 
 # Demo Video
 
-Uploading Screen Recording 2022-12-06 at 8.05.20 PM.mov…
+https://user-images.githubusercontent.com/111537449/206070961-ee33523c-782d-4f93-9dea-6647946bc190.mov
 
 # Table of Contents 
 
